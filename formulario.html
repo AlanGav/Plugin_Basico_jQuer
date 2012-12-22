@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>Mi primer plugin con jQuery</title>
+	<script type="text/javascript" src='jquery.min.js'></script>
+	<script type="text/javascript" src='jquery.myplugin.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('input').myPlugin({
+				'background':'red',
+				'color':'white'
+			});
+		})
+	</script>
+	<style type="text/css">
+		form
+		{
+			width: 250px;
+			height: 200px;
+			margin: 0 auto;
+			background: black;
+			border-radius: 10px;
+			color: white;
+			font-family: Arial;
+			padding: 10px;
+		}
+		#boton
+		{
+			margin-left: 80px;
+		}
+	</style>
+</head>
+<body>
+
+		<form>
+			<p><label>Nombre</label><input type='text' /></p>
+			<p><label>Contraseña</label><input type='text' /></p>
+			<p><button id='boton'>Entrar</button></p>
+		</form>
+
+</body>
+</html>
